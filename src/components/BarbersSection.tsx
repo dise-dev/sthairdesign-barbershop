@@ -4,12 +4,12 @@ const barbers = [
   {
     name: 'Sulejman Turanović',
     role: 'Founder & Master Barber',
-    image: '../public/sulejman-barber.jpg',
+    image: '/sulejman-barber.jpg',
   },
   {
     name: 'Edvin Šahinović',
     role: 'Barber',
-    image: '../public/saha-barber.jpg',
+    image: '/saha-barber.jpg',
   },
 ];
 
