@@ -42,7 +42,7 @@ export function Hero() {
               <Scissors size={18} className="mr-2" /> Rezerviši termin
             </a>
             <a href="#barberi" className="btn-outline">
-              Upoznaj naše barberi
+              Upoznaj naše barbere
             </a>
           </div>
 

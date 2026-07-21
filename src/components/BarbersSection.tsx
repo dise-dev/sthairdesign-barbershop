@@ -4,12 +4,12 @@ const barbers = [
   {
     name: 'Sulejman Turanović',
     role: 'Founder & Master Barber',
-    image: 'https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '../public/sulejman-barber.jpg',
   },
   {
     name: 'Edvin Šahinović',
     role: 'Barber',
-    image: 'https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '../public/saha-barber.jpg',
   },
 ];
 
@@ -82,9 +82,9 @@ export function BarbersSection() {
               Naš prostor
             </span>
             <h3 className="text-2xl md:text-3xl font-bold text-white">
-              Dvije stolice · Dva barbera · Nula čekanja
+              Dvije stolice · Dva barbera · Bez čekanja na red
             </h3>
-          </div>
+          </div>  
         </div>
       </div>
     </section>
