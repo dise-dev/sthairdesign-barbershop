@@ -105,6 +105,7 @@ export const STATUS_TABS = [
   { key: 'Otkazano/Propušteno', label: 'Otkazano/Propušteno' },
 ] as const;
 
+export const APP_LINK = 'https://play.google.com/store/apps/details?id=com.cutlio.st.hair.design';
 export const MAPS_LINK = 'https://maps.app.goo.gl/PdwqUobVbZmJ3PZx6';
 export const FACEBOOK_LINK = 'https://www.facebook.com/profile.php?id=61578756117312';
 export const PHONE_NUMBER = '062 123 456';
