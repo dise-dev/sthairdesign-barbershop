@@ -80,7 +80,7 @@ export function AdminDashboard() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {STATUS_TABS.map((t) => (
             <div key={t.key} className="bg-white border-l-4 p-5 shadow-sm" style={{
-              borderLeftColor: t.key === 'all' ? '#343a40' : t.key === 'Na čekanju' ? '#7B1F34' : t.key === 'Završeno' ? '#1A4731' : '#808080',
+              borderLeftColor: t.key === 'all' ? '#343a40' : t.key === 'Na čekanju' ? '#7B1F34' : t.key === 'Završeno' ? 'rgb(29 164 98)' : '#808080',
             }}>
               <p className="text-xs font-heading uppercase tracking-wide text-charcoal/60 mb-1">{t.label}</p>
               <p className="text-3xl font-heading font-bold text-charcoal">{counts[t.key] ?? 0}</p>
@@ -164,7 +164,7 @@ export function AdminDashboard() {
                           <button
                             onClick={() => handleComplete(b.id)}
                             disabled={b.status === 'Završeno'}
-                            className="flex items-center gap-1 bg-forest text-white px-3 py-1.5 text-xs font-heading uppercase tracking-wide hover:bg-[#0f3520] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                            className="flex items-center gap-1 bg-forest text-white px-3 py-1.5 text-xs font-heading uppercase tracking-wide hover:bg-[#1d8a52] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                           >
                             <Check size={12} /> Završeno
                           </button>
@@ -187,7 +187,7 @@ export function AdminDashboard() {
             <div className="lg:hidden space-y-4">
               {filtered.map((b: Booking) => (
                 <div key={b.id} className="bg-white p-5 shadow-sm border-l-4" style={{
-                  borderLeftColor: b.status === 'Na čekanju' ? '#7B1F34' : b.status === 'Završeno' ? '#1A4731' : '#808080',
+                  borderLeftColor: b.status === 'Na čekanju' ? '#7B1F34' : b.status === 'Završeno' ? 'rgb(29 164 98)' : '#808080',
                 }}>
                   <div className="flex items-start justify-between mb-3">
                     <div>
@@ -222,7 +222,7 @@ export function AdminDashboard() {
                     <button
                       onClick={() => handleComplete(b.id)}
                       disabled={b.status === 'Završeno'}
-                      className="flex-1 flex items-center justify-center gap-1 bg-forest text-white px-3 py-2 text-xs font-heading uppercase tracking-wide hover:bg-[#0f3520] disabled:opacity-40 transition-colors"
+                      className="flex-1 flex items-center justify-center gap-1 bg-forest text-white px-3 py-2 text-xs font-heading uppercase tracking-wide hover:bg-[#1d8a52] disabled:opacity-40 transition-colors"
                     >
                       <Check size={12} /> Završeno
                     </button>

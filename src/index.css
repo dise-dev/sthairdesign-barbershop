@@ -24,7 +24,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4 bg-forest text-white font-heading uppercase tracking-wide font-bold transition-all duration-200 hover:bg-[#0f3520] active:scale-[0.98] cursor-pointer;
+    @apply inline-flex items-center justify-center px-8 py-4 bg-forest text-white font-heading uppercase tracking-wide font-bold transition-all duration-200 hover:bg-[#1d8a52] active:scale-[0.98] cursor-pointer;
   }
   .btn-burgundy {
     @apply inline-flex items-center justify-center px-8 py-4 bg-burgundy text-white font-heading uppercase tracking-wide font-bold transition-all duration-200 hover:bg-[#5e1627] active:scale-[0.98] cursor-pointer;
@@ -51,10 +51,10 @@
   background: #343a40;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1A4731;
+  background: rgb(29 164 98);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f3520;
+  background: #1d8a52;
 }
 
 /* Date input native picker styling */

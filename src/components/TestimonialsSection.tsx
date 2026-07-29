@@ -39,7 +39,7 @@ export function TestimonialsSection() {
                 </div>
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, j) => (
-                    <Star key={j} size={14} className="text-forest" fill="#1A4731" />
+                    <Star key={j} size={14} className="text-forest" fill="rgb(29 164 98)" />
                   ))}
                 </div>
               </div>

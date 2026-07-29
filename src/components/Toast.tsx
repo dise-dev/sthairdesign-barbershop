@@ -34,7 +34,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
           <div
             key={t.id}
             className="animate-slide-in flex items-start gap-3 bg-charcoal text-white px-5 py-4 shadow-2xl border-l-4"
-            style={{ borderLeftColor: t.type === 'success' ? '#1A4731' : t.type === 'error' ? '#7B1F34' : '#808080' }}
+            style={{ borderLeftColor: t.type === 'success' ? 'rgb(29 164 98)' : t.type === 'error' ? '#7B1F34' : '#808080' }}
           >
             {t.type === 'success' && <CheckCircle size={20} className="text-forest flex-shrink-0 mt-0.5" />}
             <p className="font-body text-sm flex-1">{t.message}</p>

@@ -7,7 +7,7 @@ export default {
         charcoal: '#343a40',
         midgray: '#808080',
         offwhite: '#F8F9FA',
-        forest: '#1A4731',
+        forest: 'rgb(29 164 98)',
         burgundy: '#7B1F34',
       },
       fontFamily: {
