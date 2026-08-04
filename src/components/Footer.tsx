@@ -29,7 +29,7 @@ export function Footer() {
                 className="flex items-center gap-2 text-white/80 hover:text-white transition-colors md:justify-end group"
               >
                 <Facebook size={18} className="text-forest group-hover:text-burgundy transition-colors" />
-                <span className="font-body">Hairdesign St</span>
+                <span className="font-body">ST Hairdesign</span>
               </a>
 
               <a
@@ -58,7 +58,7 @@ export function Footer() {
             © {new Date().getFullYear()} St Hairdesign. Sva prava zadržana.
           </p>
           <p className="text-white/40 text-xs font-heading uppercase tracking-wide">
-            Sulejman Turanović · Edvin Šahinović
+            Sulejman Turanović
           </p>
         </div>
       </div>
