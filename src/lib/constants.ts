@@ -105,6 +105,52 @@ export const STATUS_TABS = [
   { key: 'Otkazano/Propušteno', label: 'Otkazano/Propušteno' },
 ] as const;
 
+export type ProductCategory = 'Preparati za kosu' | 'Balzam za bradu';
+
+export interface Product {
+  id: number;
+  name: string;
+  category: ProductCategory;
+  price: number; // KM
+  image: string;
+}
+
+export interface ProductOrder {
+  id: string;
+  user_id: string;
+  user_email: string;
+  user_name: string | null;
+  product_category: string;
+  product_name: string;
+  price: number;
+  status: 'Na čekanju' | 'Završeno';
+  created_at: string;
+}
+
+export const HAIR_PRODUCTS: Product[] = [
+  { id: 1, name: 'Hair Fiber Wax', category: 'Preparati za kosu', price: 10, image: '/hair-fiber-wax.jpg' },
+  { id: 2, name: 'Hair Gel Red One', category: 'Preparati za kosu', price: 10, image: '/hair-gel-red-one.jpg' },
+  { id: 3, name: 'Hair Gel', category: 'Preparati za kosu', price: 10, image: '/hair-gel.jpg' },
+  { id: 4, name: 'Hair Spray', category: 'Preparati za kosu', price: 10, image: '/hair-spray.jpg' },
+  { id: 5, name: 'Hair Fiber Wax Pro', category: 'Preparati za kosu', price: 10, image: '/hair-fiber-wax.jpg' },
+  { id: 6, name: 'Hair Gel Extra Strong', category: 'Preparati za kosu', price: 10, image: '/hair-gel-red-one.jpg' },
+];
+
+export const BEARD_PRODUCTS: Product[] = [
+  { id: 7, name: 'Balzam za bradu Classic', category: 'Balzam za bradu', price: 10, image: '/hair-fiber-wax.jpg' },
+  { id: 8, name: 'Balzam za bradu Sandalwood', category: 'Balzam za bradu', price: 10, image: '/hair-gel.jpg' },
+  { id: 9, name: 'Balzam za bradu Cedar', category: 'Balzam za bradu', price: 10, image: '/hair-spray.jpg' },
+  { id: 10, name: 'Balzam za bradu Citrus', category: 'Balzam za bradu', price: 10, image: '/hair-gel-red-one.jpg' },
+  { id: 11, name: 'Balzam za bradu Mint', category: 'Balzam za bradu', price: 10, image: '/hair-fiber-wax.jpg' },
+  { id: 12, name: 'Balzam za bradu Original', category: 'Balzam za bradu', price: 10, image: '/hair-gel.jpg' },
+];
+
+export const PRODUCT_ORDER_TABS = [
+  { key: 'all', label: 'Sve narudžbe' },
+  { key: 'Na čekanju', label: 'Na čekanju' },
+  { key: 'Završeno', label: 'Završeno' },
+] as const;
+
 export const APP_LINK = 'https://play.google.com/store/apps/details?id=com.cutlio.st.hair.design';
 export const MAPS_LINK = 'https://maps.app.goo.gl/PdwqUobVbZmJ3PZx6';
 export const FACEBOOK_LINK = 'https://www.facebook.com/profile.php?id=61578756117312';

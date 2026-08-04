@@ -1,6 +1,7 @@
 import { Navbar } from './Navbar';
 import { Hero } from './Hero';
 import { ServicesSection } from './ServicesSection';
+import { ProductsSection } from './ProductsSection';
 import { BarbersSection } from './BarbersSection';
 import { VideoSection } from './VideoSection';
 import { TestimonialsSection } from './TestimonialsSection';
@@ -14,6 +15,7 @@ export function HomePage() {
       <Navbar />
       <Hero />
       <ServicesSection />
+      <ProductsSection />
       <BarbersSection />
       <VideoSection />
       <TestimonialsSection />

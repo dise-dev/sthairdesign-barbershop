@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { BookingProvider } from './lib/booking-context';
 import { AdminProvider } from './lib/admin-context';
+import { CustomerAuthProvider } from './lib/customer-auth-context';
+import { ProductOrderProvider } from './lib/product-order-context';
 import { ToastProvider } from './components/Toast';
 import { HomePage } from './components/HomePage';
 import { AdminPage } from './components/AdminPage';
@@ -42,11 +44,15 @@ function App() {
 
   return (
     <ToastProvider>
-      <BookingProvider>
-        <AdminProvider>
-          {isAdmin ? <AdminPage /> : <HomePage />}
-        </AdminProvider>
-      </BookingProvider>
+      <CustomerAuthProvider>
+        <BookingProvider>
+          <AdminProvider>
+            <ProductOrderProvider>
+              {isAdmin ? <AdminPage /> : <HomePage />}
+            </ProductOrderProvider>
+          </AdminProvider>
+        </BookingProvider>
+      </CustomerAuthProvider>
     </ToastProvider>
   );
 }
