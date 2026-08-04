@@ -116,7 +116,7 @@ export function Hero() {
               <Scissors size={18} className="mr-2" /> Rezerviši termin
             </a>
             <a href="#barberi" className="btn-outline">
-              Upoznaj naše barberi
+              Upoznaj naše barbere
             </a>
           </div>
 
@@ -127,17 +127,17 @@ export function Hero() {
             }`}
           >
             <div>
-              <div className="text-3xl font-bold text-white">10+</div>
+              <div className="text-3xl font-bold text-white">8+</div>
               <div className="text-sm uppercase tracking-wide">Godina iskustva</div>
             </div>
             <div className="h-8 w-px bg-white/20" />
             <div>
-              <div className="text-3xl font-bold text-white">5000+</div>
+              <div className="text-3xl font-bold text-white">500+</div>
               <div className="text-sm uppercase tracking-wide">Zadovoljnih klijenata</div>
             </div>
             <div className="h-8 w-px bg-white/20" />
             <div>
-              <div className="text-3xl font-bold text-white">3</div>
+              <div className="text-3xl font-bold text-white">2</div>
               <div className="text-sm uppercase tracking-wide"> Barbera</div>
             </div>
           </div>
