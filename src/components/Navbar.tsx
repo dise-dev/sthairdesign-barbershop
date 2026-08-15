@@ -25,7 +25,7 @@ export function Navbar() {
         scrolled ? 'bg-charcoal shadow-lg' : 'bg-transparent'
       }`}
     >
-      <div className="container-x flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-0 pb-4">
+      <div className="container-x flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-0 pb-0">
         <a href="#top" className="flex items-center">
           <img src="/sthairdesign-logo.png" alt="St Hairdesign" className="h-32 w-auto object-contain" />
         </a>
