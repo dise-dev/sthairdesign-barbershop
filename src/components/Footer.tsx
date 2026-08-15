@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: logo */}
           <div>
-            <div className="mb-4">
-              <img src="/sthairdesign-logo.png" alt="St Hairdesign" className="h-16 w-auto object-contain" />
+            <div className="mb-0">
+              <img src="/sthairdesign-logo.png" alt="St Hairdesign" className="h-32 w-auto object-contain" />
             </div>
             <p className="text-white/50 text-sm max-w-xs">
               Moderni muški frizerski salon u Zenici. Preciznost, brzina, stil.
